@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <title>Javascript final Assignment</title>
+        <link rel="stylesheet" href="style/style.css">
+        <script type="text/javascript" src="script/script.js"></script>
+        
+
+    </head>
+    <body>
+        <!-- <form onsubmit="return validation();" action="message.html"></form> -->
+        <h1 id="heading">Submit your application</h1>
+        <p id="second">for<b>.NET DEveloper (Fresher)</b></p><br><br.
+        <h1>Personal Information</h1><br><br>
+        <table>
+            <tr>
+                <th>
+                    <p>Name as per Id proof
+                    <!-- <label for="mark" id="required" style="color: rgb(241, 13, 13);visibility: visible;">*</label> -->
+                    <label  id="error" style="color: red;visibility: hidden;">Required to fill</label>
+                    </p>
+                    <input type="text" id="name"> 
+                </th>
+                <th>
+                    <p>Father's Name
+                    <label  id="required" style="color: rgb(241, 13, 13);visibility: visible;">*</label>
+                    <label  id="error1" style="color: red;visibility: hidden;">Required to fill</label>
+                
+                    </p>
+                    <input type="text" id="fname"> 
+            
+                </th>
+            </tr>
+        </table><br>
+        <table >
+            <tr>
+                <th>
+                    <p>
+                        Email
+                        <label  id="required" style="color: rgb(241, 13, 13);visibility: visible;">*</label>
+                        <label  id="errormail" style="color: red;visibility: hidden;">Required to fill</label>
+                        
+                    </p>
+                    <input type="text" id="mail">
+                </th>
+                <th>
+                    <p>
+                    Date of Bith
+                    <label  id="required" style="color: rgb(241, 13, 13);visibility: visible;">*</label>
+                    <label  id="errordob" style="color: red;visibility: hidden;" >Required to fill</label>
+                    </p>
+                    <input type="text" id="dob" placeholder="dd-mm-yyyy">
+
+                </th>
+                <th>
+                    <p>
+                        Mobile number
+                        <label for="mark" id="required" style="color: rgb(241, 13, 13);visibility: visible;">*</label>
+                        <label for="fname" id="errornum" style="color: red;visibility: hidden;">Required to fill</label>
+
+                    </p>
+                        <input type="tel" id="phone">
+                   
+                </th>
+            </tr>
+
+        </table><br>
+
+
+        <table>
+            <tr>
+                <th>
+                    <p>
+                        Current Address
+                        <label for="fname" id="errorad1" style="color: red;visibility: hidden;">Required to fill</label>
+
+                        <label for="mark" id="required" style="color: rgb(241, 13, 13);visibility: visible;">*</label>
+                    </p>
+
+                    <textarea placeholder="address line 1" id="ad1"></textarea>
+                </th>
+                <th><br><br>
+                    <textarea placeholder="address line 2" id="ad2"></textarea>
+                    <label for="fname" id="errorad2" style="color: red;visibility: hidden;">Required to fill</label>
+
+                </th>
+            </tr>
+        </table><br>
+        <table>
+            <tr>
+                <th><input type="text" placeholder="city" id="city"</th>
+                <label  id="errorcity" style="color: red;visibility: hidden;">Required to fill</label>
+
+                <th>
+                    <select name ="state" id=ck1>
+                        <option value ="tamilnadu">Tamilnadu</option>
+                        <option value ="kerala">Kerala</option>
+                        <option value="karanataka">Karanataka</option>
+                        <option value="andhra paradesh">Andhra Pradesh</option>
+                    </select>
+                </th>
+                <th>
+                    <p>
+                        <input type="tel" placeholder="pincode" id="pin">
+                        <label id="errorpin" style="color: red;visibility: hidden;">Required to fill</label>
+
+
+                    </p>
+                </th>
+            </tr>
+        </table><br>
+        <table>
+        <tr>
+            <th>
+                <p>
+                    Parmanent address <label for="mark" id="required" style="color: rgb(241, 13, 13);visibility: visible;">*</label>
+                    <input type="checkbox" id="check" onclick="copy()">Same as current address
+                </p>
+                <textarea placeholder="address line 1" id="ad11"></textarea>
+                <label for="fname" id="errorad11" style="color: red;visibility: hidden;">Required to fill</label>
+
+            </th>
+            <th><br><br>
+                <textarea placeholder="address line 2" id="ad22"></textarea>
+                <label for="fname" id="errorad22" style="color: red;visibility: hidden;">Required to fill</label>
+
+            </th>
+        </tr>
+        </table><br><br>
+        <table>
+            <tr>
+                <th><input type="text" placeholder="city" id="city1"</th>
+                <label  id="errorcity1" style="color: red;visibility: hidden;">Required to fill</label>
+
+                <th>
+                    <select name ="state">
+                        <option value ="tamilnadu">Tamilnadu</option>
+                        <option value ="kerala">Kerala</option>
+                        <option value="karanataka">Karanataka</option>
+                        <option value="andhra paradesh">Andhra Pradesh</option>
+                    </select>
+                </th>
+                <th>
+                    <p>
+                        <input type="tel" placeholder="pincode" id="pin1">
+                        <label id="errorpin1" style="color: red;visibility: hidden;">Required to fill</label>
+
+
+                    </p>
+                </th>
+            </tr>
+        </table><br>
+        <table>
+            
+
+            <tr>
+                <th>
+                    <p> Upload profile picture<label for="mark" id="required" style="color: rgb(241, 13, 13);visibility: visible;">*</label><br></p>
+                    <p>
+                        Please upload a photo of yourself.Your face should be clearly visible.Make sure that image does not exceed 500KB
+                    </p>
+                    <input type="file" value="UPLOAD PHOTO" id="photo">
+                    <label id="errorphoto" style="color: red;visibility: hidden;">Required to fill</label>
+
+                </th>
+            </tr>
+
+           
+        </table>
+    </table> <br><br>
+        
+        <input type="button" id="button" onclick="validation()" value="submit">
+    </body>
+</html>
